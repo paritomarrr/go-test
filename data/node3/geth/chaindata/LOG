@@ -1,0 +1,38 @@
+=============== Mar 16, 2022 (IST) ===============
+15:43:33.739669 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:43:33.744604 db@open opening
+15:43:33.745684 version@stat F·[] S·0B[] Sc·[]
+15:43:33.747500 db@janitor F·2 G·0
+15:43:33.747572 db@open done T·2.901965ms
+15:43:33.759726 db@close closing
+15:43:33.759930 db@close done T·151.685µs
+=============== Mar 16, 2022 (IST) ===============
+15:52:48.800512 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:52:48.800803 version@stat F·[] S·0B[] Sc·[]
+15:52:48.800849 db@open opening
+15:52:48.800925 journal@recovery F·1
+15:52:48.805423 journal@recovery recovering @1
+15:52:48.811416 memdb@flush created L0@2 N·628 S·51KiB "\x02d\xfc..\x19Ba,v434":"\xff8\x00..\xb2E_,v333"
+15:52:48.816490 version@stat F·[1] S·51KiB[51KiB] Sc·[0.25]
+15:52:48.825115 db@janitor F·3 G·0
+15:52:48.825191 db@open done T·24.322314ms
+=============== Mar 16, 2022 (IST) ===============
+15:56:35.494252 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:56:35.494693 version@stat F·[1] S·51KiB[51KiB] Sc·[0.25]
+15:56:35.494767 db@open opening
+15:56:35.494892 journal@recovery F·1
+15:56:35.498667 journal@recovery recovering @3
+15:56:35.512549 memdb@flush created L0@5 N·266 S·10KiB "Dat..ion,v630":"unc..own,v635"
+15:56:35.516047 version@stat F·[2] S·62KiB[62KiB] Sc·[0.50]
+15:56:35.524275 db@janitor F·4 G·0
+15:56:35.524366 db@open done T·29.546093ms
+=============== Mar 16, 2022 (IST) ===============
+15:57:25.017642 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:57:25.017905 version@stat F·[2] S·62KiB[62KiB] Sc·[0.50]
+15:57:25.017941 db@open opening
+15:57:25.018024 journal@recovery F·1
+15:57:25.021169 journal@recovery recovering @6
+15:57:25.032181 memdb@flush created L0@8 N·1 S·204B "unc..own,v897":"unc..own,v897"
+15:57:25.035533 version@stat F·[3] S·62KiB[62KiB] Sc·[0.75]
+15:57:25.043034 db@janitor F·5 G·0
+15:57:25.043136 db@open done T·25.155426ms

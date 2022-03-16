@@ -1,0 +1,17 @@
+node1-> 0xcF8D515Bd31675CeF621a8e45fb7aCFF97560A49
+node2 -> 0x09915315fECfD563EC29182078383aFedcF02FC9
+node 3-> 0x76Ce1Dcf70cA301004b17bFB4C46514eB0d5Ecdd
+
+enode-> enode://8e543dc9b5f1d8e94b8df3e8d41c313c981130d9ddea7351a247bc0b175cd7d5d45e2490a2bd0b71ada6b208ea7210081833f624305dceee4346a463d2bb6056@127.0.0.1:0?discport=8009
+
+script
+miner
+geth --datadir data/node3 --nodiscover --syncmode full -verbosity 6 --ipcdisable --port 30303 --bootnodes 'enode://8e543dc9b5f1d8e94b8df3e8d41c313c981130d9ddea7351a247bc0b175cd7d5d45e2490a2bd0b71ada6b208ea7210081833f624305dceee4346a463d2bb6056@127.0.0.1:0?discport=8009' --networkid 9876 --gasprice'1' --unlock '0x76Ce1Dcf70cA301004b17bFB4C46514eB0d5Ecdd' --password password.txt --mine
+
+peer nodes
+geth --datadir data/node2 --nodiscover --syncmode full -verbosity 6 --ipcdisable --port 30301 --http --http.addr ‘localhost’ --http.port 8101 --http.api admin,debug,eth,miner,net,personal,shh,txpool,web3 --bootnodes ‘enode://8e543dc9b5f1d8e94b8df3e8d41c313c981130d9ddea7351a247bc0b175cd7d5d45e2490a2bd0b71ada6b208ea7210081833f624305dceee4346a463d2bb6056@127.0.0.1:0?discport=8009’ --networkid 9876
+
+node2
+geth --datadir data/node1 --nodiscover --syncmode full -verbosity 6 --ipcdisable --port 30301 --http --http.addr ‘localhost’ --http.port 8101 --http.api admin,debug,eth,miner,net,personal,shh,txpool,web3 --bootnodes ‘enode://8e543dc9b5f1d8e94b8df3e8d41c313c981130d9ddea7351a247bc0b175cd7d5d45e2490a2bd0b71ada6b208ea7210081833f624305dceee4346a463d2bb6056@127.0.0.1:0?discport=8009’ --networkid 9876
+
+https://github.com/UV-Labs/docker-geth/tree/main/DO-geth.git
